@@ -29,7 +29,7 @@ class Dog(Pet):
 
 class Cat(Pet):
     def speak(self):
-        return "Meow."
+        return "Purr..."
     def sleep(self):
         self.energy = 3
         return f"{self.name} takes a nap. Energy is back to {self.energy}."
