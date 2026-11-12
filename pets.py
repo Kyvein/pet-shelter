@@ -16,14 +16,25 @@ class Pet:
 
         def describe(self):
             return f"{self.name} is {self.age} years old and says {self.speak()}"
+    def sleep(self):
+        self.energy = 3
+        return f"{self.name} takes a nap. Energy is back to {self.energy}."
 
 class Dog(Pet):
     def speak(self):
         return "Woof!"
+    def sleep(self):
+        self.energy = 3
+        return f"{self.name} takes a nap. Energy is back to {self.energy}."
 
 class Cat(Pet):
     def speak(self):
-        return "HIS!..."
+        return "Purr..."
+      
+    def sleep(self):
+        self.energy = 3
+        return f"{self.name} takes a nap. Energy is back to {self.energy}."
+
 
 class Bird(Pet):
   def __init__(self, name, age, can_fly=True):
@@ -36,3 +47,6 @@ class Bird(Pet):
   def describe(self):
     flying = "can fly" if self.can_fly else "cannot fly"
   return super().describe() + f" and {flying}."
+  def sleep(self):
+      self.energy = 3
+      return f"{self.name} takes a nap. Energy is back to {self.energy}."
