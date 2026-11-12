@@ -23,7 +23,7 @@ class Dog(Pet):
 
 class Cat(Pet):
     def speak(self):
-        return "Meow."
+        return "Pur...."
 
 class Bird(Pet):
   def __init__(self, name, age, can_fly=True):
